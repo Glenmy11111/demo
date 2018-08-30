@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局</title>
+    <style>
+    *{
+    	margin:0;
+    	padding:0;
+    }
+    html,body{
+    	height:100%;
+    }
+    div{
+    	float:left;
+    	height:100%;
+    }
+    .main{
+    	background:blue;
+    	width:100%;
+    	box-sizing:border-box;
+    	padding-left:200px;
+    	padding-right:200px;
+    }
+    .left{
+    	background:purple;
+    	width:200px;
+    	margin-left:-100%;/*其实就是左边框距离右边的距离为100%*/
+    }
+    .right{
+    	background:green;
+    	width:200px;
+    	margin-right:-100%;
+    }
+</style>
+</head>
+<body>
+	<div class="main">中间的内容</div>
+	<div class="left">左边</div>
+	<div class="right">右边</div>
+  
+</body>
+</html>
